@@ -5,7 +5,7 @@ def main():
     bom = 0
     ruim = 0
 
-    for entrevistados in range(1,51): # Correção do range que estava incorreto, coletando apenas 49 respostas, e não 50, conforme o enunciado.
+    for entrevistados in range(1,51):
         nome = input("Digite o seu nome: \n")
         while True:
             try:
@@ -39,7 +39,7 @@ def main():
     bomPorcentagem = bom * 100 / entrevistados
     ruimPorcentagem = ruim * 100 / entrevistados
 
-    print("Pesquisa finalizada!\nAvaliações Excelentes:",excelente, f"({excPorcentagem:.2f}%)\nAvaliações Ruins:",ruim,f"({excPorcentagem:.2f}%)\n") # Alteração da forma de apresentação da porcentagem (inserido double float).
+    print("Pesquisa finalizada!\nAvaliações Excelentes:",excelente, f"({excPorcentagem:.2f}%)\nAvaliações Ruins:",ruim,f"({excPorcentagem:.2f}%)\n") 
 
 if __name__ == "__main__":
     main()
