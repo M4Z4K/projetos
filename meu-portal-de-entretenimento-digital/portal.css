@@ -1,0 +1,72 @@
+/* ====================================================================
+   RESET UNIVERSAL - Aplica box-sizing a TODOS os elementos
+   ==================================================================== */
+* {
+    box-sizing: border-box;  /* Inclui padding e border no cálculo de largura/altura */
+}
+
+/* ====================================================================
+   ESTILOS DO BODY - Define aparência geral da página
+   ==================================================================== */
+body{
+    background-color: rgb(48, 10, 48);  /* Define fundo roxo escuro (RGB: 48,10,48) */
+}
+
+/* ====================================================================
+   CONTAINER PRINCIPAL - Layout das 3 colunas
+   ==================================================================== */
+.principal {
+    width: 100%;                /* Ocupa toda a largura disponível */
+    display: flex;              /* Ativa Flexbox para layout flexível */
+    flex-direction: row;        /* Posiciona itens na horizontal (linha) */
+    gap: 16px;                  /* Cria espaçamento de 16px entre as colunas */
+    padding: 20px;              /* Cria espaço interno de 20px em todos os lados */
+}
+
+/* ====================================================================
+   COLUNAS - Estilo das 3 seções (Filmes, Músicas, Jogos)
+   ==================================================================== */
+.coluna{
+    flex: 1;                                            /* Cada coluna cresce igualmente */
+    background-color: rgb(63, 15, 63);                  /* Define fundo roxo um pouco mais claro */
+    border-radius: 10px;                                /* Arredonda cantos com raio de 10px */
+    box-shadow: 0px 0px 11px purple;                    /* Adiciona sombra roxa ao redor da coluna */
+    align-items: center;                                /* Alinha conteúdo verticalmente ao centro */
+    padding: 20px;                                      /* Cria espaço interno de 20px */
+}
+
+/* ====================================================================
+   EFEITO HOVER DAS COLUNAS - Anima sombra ao passar mouse
+   ==================================================================== */
+.coluna:hover {
+    box-shadow: 0 8px 16px rgb(220, 6, 240);            /* Aumenta sombra quando passa o mouse (mais visível) */
+    transition: box-shadow 0.3s ease;                   /* Anima mudança da sombra em 0.3 segundos suavemente */
+}
+
+/* ====================================================================
+   FLEX-GROW - Propriedades adicionais para as seções
+   ==================================================================== */
+#filmes, #musicas, #jogos{
+    flex-grow: 1;  /* Faz cada seção crescer e ocupar espaço igual disponível */
+}
+
+/* ====================================================================
+   LINKS - Estilo dos links de acesso(imagens clicáveis)
+   ==================================================================== */
+a{
+    display: flex;              /* Ativa Flexbox para este link */
+    align-items: center;        /* Alinha conteúdo (imagem) ao centro */
+}
+
+/* ====================================================================
+   IMAGENS - Estilo das logos dos serviços
+   ==================================================================== */
+img{
+    max-width: 100%;            /* Imagem nunca ultrapassa largura do container */
+    border-radius: 10px;        /* Arredonda cantos das imagens com raio de 10px */
+}
+
+
+
+
+

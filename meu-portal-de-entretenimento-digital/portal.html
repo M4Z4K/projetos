@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portal de entretenimento com streamers de filmes, músicas e jogos">
+    <meta name="theme-color" content="#1a1a1a">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="portal.css">
+    <title>Meu Portal de Entretenimento</title>
+    <!-- CSS INTERNO -->
+    <style>
+        /* === ESTILOS GERAIS PARA TEXTOS === */
+        /* Aplica estilos padrão para h1, h2, h3 e parágrafos */
+        h1, h2, h3, p{
+            text-align: center;           /* Alinha o texto ao centro */
+            color: white;                 /* Define cor do texto como branco */
+            margin: 10px;                 /* Cria espaço externo de 10px em todos os lados */
+        }
+
+        /* === ESTILOS PARA TÍTULOS h2 === */
+        /* Formata os títulos das seções */
+        h2{
+            font-size: x-large;           /* Define tamanho do texto como bem grande */
+            font-weight: bold;            /* Deixa o texto em negrito */
+        }
+
+        /* === ESTILOS PARA SUBTÍTULOS h3 === */
+        /* Formata os nomes dos serviços/plataformas */
+        h3{
+            font-size: large;             /* Define tamanho do texto como grande */
+            font-weight: bold;            /* Deixa o texto em negrito */
+        }
+
+        /* === ESTILOS PARA PARÁGRAFOS === */
+        /* Formata as descrições dos serviços */
+        p{
+            border-bottom: 2px solid rgba(255, 255, 255, 0.2);  /* Adiciona linha horizontal branca com 20% de opacidade */
+            padding-bottom: 1rem;         /* Cria espaço interno abaixo do texto antes da linha */
+            margin-bottom: 1.5rem;        /* Cria espaço externo abaixo do parágrafo */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- CSS INLINE -->
+        <h1 style="font-size:xx-large; font-weight: bolder; color: rgb(255, 183, 0)">
+            <!-- font-size: xx-large = Define tamanho de fonte extremamente grande -->
+            <!-- font-weight: bolder = Deixa o texto ainda mais negrito que bold -->
+            <!-- color: rgb(255, 183, 0) = Define cor do texto como amarelo ouro -->
+            Meu Portal de Entretenimento Digital
+        </h1>
+    </header>
+    
+    <div class="principal">
+        <div class="coluna" id="filmes">
+            <h2>Streamers de Filmes e Séries</h2>
+            <a href="https://www.netflix.com" target="_blank" aria-label="Acessar Netflix" rel="noopener noreferrer">
+                <img src="https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-original-577x577/s3/102014/netflix_2014.png?itok=PJtPK0Iu" alt="Logo da Netflix">
+            </a>
+            <h3>Netflix</h3>
+            <p>
+                A Netflix é um serviço de streaming que oferece uma ampla variedade de séries, 
+                filmes e documentários premiados em milhares de aparelhos conectados à internet.
+            </p>
+            <a href="https://www.primevideo.com/" target="_blank" aria-label="Acessar Prime Video" rel="noopener noreferrer">
+                <img src="https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-original-577x577/s3/062018/untitled-4_15.png?0uYfdJHduSODEvrW.I1JtoDS3tBpyLaG&itok=W9vgtAXi" alt="Logo da Prime Video">
+            </a>
+            <h3>Prime Video</h3>
+            <p>
+                Assista a filmes populares, séries, esportes e TV ao vivo incluídos no 
+                Prime e muito mais com assinaturas. Assista quando e onde quiser.
+            </p>
+        </div>
+
+        <div class="coluna" id="musicas">
+            <h2>Streamers de Músicas e Podcasts</h2>
+            <a href="https://www.youtube.com" target="_blank" aria-label="Acessar Youtube" rel="noopener noreferrer">
+                <img src="https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-original-577x577/s3/082017/untitled-2_18.png?itok=Dhyd5dh5" alt="Logo do Youtube">
+            </a>
+            <h3>Youtube</h3>
+            <p>
+                Aproveite vídeos e músicas que você ama, 
+                envie e compartilhe conteúdo original com amigos, parentes e o mundo no YouTube.
+            </p>
+            <a href="https://open.spotify.com/intl-pt" target="_blank" aria-label="Acessar Spotify" rel="noopener noreferrer">
+                <img src="https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-original-577x577/s3/082017/untitled-1_173.png?itok=dmgiXW4J" alt="Logo do Spotify">
+            </a>
+            <h3>Spotify</h3>
+            <p>
+                O Spotify é um serviço de música digital que dá acesso a milhões de músicas.
+            </p>
+        </div>
+
+        <div class="coluna" id="jogos">
+            <h2>Plataformas de Jogos Digitais</h2>
+            <a href="https://store.steampowered.com/?l=portuguese" target="_blank" aria-label="Acessar Steam" rel="noopener noreferrer">
+                <img src="https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-original-577x577/s3/102015/steam.png?itok=z5pt7TTv" alt="Logo da Steam">
+            </a>
+            <h3>Steam</h3>
+            <p>
+                Steam é um serviço de distribuição digital de jogos eletrônicos e loja gerenciada pela Valve Corporation 
+                de plataformas digitais como jogos e aplicativos de programação, e fornece serviços facilitados como 
+                atualização automática de jogos, e preços acessíveis aos usuários.
+            </p>
+            <a href="https://store.epicgames.com/?lang=pt-BR" target="_blank" aria-label="Acessar Epic Games Store" rel="noopener noreferrer">
+                <img src="https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-original-577x577/s3/0008/5818/brand.gif?itok=8V-XKGBL" alt="Logo da Epic Games Store">
+            </a>
+            <h3>Epic Games Store</h3>
+            <p>Boas-vindas à Epic Games Store! Baixe e jogue jogos para PC de todos os gêneros. Temos mods, 
+                DLCs e jogos grátis também! Jogos para todos.</p>
+        </div>
+
+    </div>
+</body>
+</html>
