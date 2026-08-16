@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    <form id="formularioCadastro" action="processaCadastro.php" method="POST">
+        <fieldset>
+            <legend><strong>Formulário de cadastro</strong></legend>
+            <br>
+            <div class="cNome">
+                <label for="nome"><strong>Digite o seu nome:</strong></label>
+                <br>
+                <input type="text" name="nomeCandidato" placeholder="Seu nome" id="nome" required>
+            </div>
+            <br>
+            <div class="cIdade">
+                <label for="idade"><strong>Digite a sua idade:</strong></label>
+                <br>
+                <input type="number" name="idadeCandidato" placeholder="Sua idade" id="idade" required>
+            </div>
+            <br>
+            <div class="cProfissao">           
+                <label for="profissao"><strong>Digite a sua profissão:</strong></label>
+                <br>
+                <input type="text" name="profissaoCandidato" id="profissao" placeholder="Sua profissão" required>
+            </div>
+            <br>
+            <div class="cPretensao">
+                <label for="pretensao"><strong>Digite qual sua pretensão salarial em R$:</strong></label>
+                <br>
+                <input type="number" name="pretensaoCandidato" id="pretensao" placeholder="Sua pretensão salarial">
+            </div>
+            <br>
+            <div class="cExperiencia">
+                <label for="experiencia"><strong>Digite sua experiência profissional:</strong></label>
+                <br>
+                <textarea type="text" name="experienciaCandidato" id="experiencia" cols="30" rows="10" required></textarea>
+            </div>
+            <br>
+            <div class="cbutton">
+                <label for="enviar"></label>
+                <input type="submit" value="Enviar" name="enviar" id="enviar" form="formularioCadastro">
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
