@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desconto</title>
+    <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="processaDesconto.php" id="formularioDesconto" method="POST">
+        <fieldset>
+            <legend><strong>Forma de Pagamento</strong></legend>
+            <br>
+            <div class="cNome">
+                <label for="nome"><strong>Nome completo:</strong></label>
+                <br>
+                <input type="text" name="txtNome" placeholder="Nome Sobrenome" id="nome" required>
+            </div>
+            <br>
+            <div class="cValor">
+                <label for="valor"><strong>Confirme o valor da compra:</strong></label>
+                <br>
+                <input type="number" name="txtValorCompra" placeholder="R$" id="valor" required>
+            </div>
+            <br>
+            <div class="cPagamento">
+                <label for="pagamento"><strong>Selecione a forma de pagamento:</strong></label>
+                <br>
+                <select name="cmbPag" id="pagamento">
+                    <option value="cartaoCredito">Cartão de Crédito</option>
+                    <option value="boleto">Boleto Bancário</option>
+                    <option value="deposito">Depósito Bancário</option>
+                </select>
+            </div>
+            <br>
+            <div class="cButton">
+                <label for="enviar"></label>
+                <input type="submit" name="enviar" id="enviar" value="Enviar" form="formularioDesconto">
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
